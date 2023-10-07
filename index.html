@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="console.js"></script>
+</head>
+
+<body>
+  <script> new Console();</script>
+  <div id = "main-container">
+    <div id = "canvas-container">
+      <canvas id="canvas" width="900px" height="500px"></canvas>
+      <canvas id="hidden-canvas" width="900px" height="500px" style="display: none;"></canvas>
+      <div id="frame-container">
+        <img class="frame" src="images/default.png"></img>
+        <div class="frame"></div>
+        <img class="frame" src="images/default.png"></img>
+        <div class="frame"></div>
+        <img class="frame" src="images/default.png"></img>
+        <div class="frame"></div>
+        <img class="frame" src="images/default.png"></img>
+        <div class="frame"></div>
+        <div class="add-frame">
+          <i class="add-frame-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div id = "hierarchy">
+      <div id="hierarchy-header">
+        <h3>Hierarchy</h3>
+        <button id="add-to-hierarchy">+</button>
+      </div>
+      <form id="create-bone-form">
+        <p style="font-weight: bold; font-size: 1.1rem;">Add Bone</p>
+        <label class="custom-label">
+          <input type="file" id="bone-file" accept="image/png, image/jpeg" />
+          <span id="file-upload-text">Upload Image</span>
+        </label>
+        <p>Bone Name: <input type="text" id="bone-name" required/></p>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- scripts -->
+  <script src ="/scripts/frameContainer.js"></script>
+  <script src="/scripts/utils.js"></script>
+  <script src="/scripts/bone.js"></script>
+  <script src="/scripts/skeleton.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/hierarchy.js"></script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
